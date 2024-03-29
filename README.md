@@ -3,7 +3,7 @@
 <h3>Problem Statement 🛠️</h3>
 <p>In the digital age, traditional healthcare struggles to meet patient needs, especially in remote areas. Our app tackles this by providing seamless online consultations, overcoming geographical barriers and long waiting times. By connecting patients with medical professionals, regardless of location, we aim to revolutionize healthcare access. Through convenient digital platforms, we facilitate efficient communication for improved patient outcomes. Additionally, our app offers basic health exercises and calculates fitness levels, ensuring holistic care and empowering users to maintain optimal health.</p>
 <h3>Solution 💪🏽</h3>
-<h4>1.Doctor consultation:</h4>
+<h4>1. Doctor consultation:</h4>
 <p>The app facilitates seamless communication between users and their designated doctors through a unique code system, initially requiring a physical visit. Subsequent consultations are conducted via the in-app chat system, providing convenient and efficient healthcare communication while maintaining the privacy of doctors, as their contact details are not shared directly. Chat records are securely stored in the database, enabling users to view their chat history and promptly address emergencies or doubts, ensuring timely and effective healthcare support.</p>
 <h4>2. BMI:</h4>
 <p>Here,users input their gender, age, weight, and height, and the app calculates their Body Mass Index (BMI) based on these inputs. This calculation helps users understand their body composition and determine if they fall within a healthy weight range for their gender and age group.</p>
