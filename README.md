@@ -17,7 +17,17 @@
 <p>Users are engage in a guided exercise where they breathe in and out according to a count to 10. This structured breathing pattern helps users focus on their breath, promoting relaxation and stress reduction. </p>
 <h4>7. Step Count:</h4>
 <p>This app automatically tracks and calculates the number of steps users take throughout the day. This functionality provides users with valuable insights into their physical activity levels and helps them monitor their daily movement and exercise habits. By offering real-time step count updates, the app encourages users to stay active and achieve their fitness goals for a healthier lifestyle.</p>
-<h4>7. AI Chatbot:</h4>
-<p>This app automatically tracks and calculates the number of steps users take throughout the day. This functionality provides users with valuable insights into their physical activity levels and helps them monitor their daily movement and exercise habits. By offering real-time step count updates, the app encourages users to stay active and achieve their fitness goals for a healthier lifestyle.</p>
+<h4>8. AI Chatbot with FAQ section:</h4>
+<p>The app seamlessly integrates an AI chatbot and FAQ section to provide users with basic functionalities and comprehensive healthcare support. In addition to facilitating communication between users and their designated doctors, the AI chatbot offers immediate assistance and guidance based on user queries. The FAQ section serves as a resource hub, offering answers to commonly asked questions and empowering users with valuable health-related information.</p>
+<h4>9. Remainder system:</h4>
+<p>The app incorporates a reminder system to promote healthy habits, including reminders to drink water and prompts for exercise. These reminders are customizable and help users stay hydrated and maintain a regular exercise routine, contributing to their overall well-being.</p>
+<h3>Tech Stack 💻</h3>
+<p>Front-end: JAVA </p>
+<p>Back-end: Firebase</p>
+<h3>Team Members:</h3>
+<p>C.Harish Karthik</p>
+<p>Sowmya R</p>
+<p>Ponsaranya R</p>
+
 
 
