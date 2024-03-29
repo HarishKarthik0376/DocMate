@@ -28,6 +28,7 @@
 <h3>Tech Stack 💻</h3>
 <p>Front-end: JAVA </p>
 <p>Back-end: Firebase</p>
+<p>AI Chatbot: Google's Dialogflow</p>
 <h3>Team Members:</h3>
 <ul>
 <li>C.Harish Karthik</li>
