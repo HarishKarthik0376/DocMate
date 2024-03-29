@@ -1,13 +1,9 @@
 package com.example.doctormate;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -24,16 +20,16 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class MainActivity extends AppCompatActivity {
+public class actvitiespage extends AppCompatActivity {
     private FirebaseAuth mAuth;
     FirebaseDatabase database;
     String ftechname;
-    ProgressDialog dialog;
+    TextView nametodisplay;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_actvitiespage);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
@@ -41,21 +37,8 @@ public class MainActivity extends AppCompatActivity {
         });
         mAuth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
-        dialog = new ProgressDialog(this);
-        dialog.setTitle("Please Wait");
-        dialog.setMessage("Loading");
-        dialog.show();
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                dialog.dismiss();
-            }
-        },1500);
-        TextView nametodisplay,contactdoctor;
-        ImageView imageviewdoctor;
-        nametodisplay = findViewById(R.id.nametodisplay);
-        contactdoctor = findViewById(R.id.contactdoctor);
-        imageviewdoctor = findViewById(R.id.imageviewdoctor);
+        nametodisplay = findViewById(R.id.nametodisplay1);
+
         String Uid = mAuth.getUid();
         if(Uid!=null) {
             database.getReference().child("Users").child(Uid).addValueEventListener(new ValueEventListener() {
@@ -65,14 +48,10 @@ public class MainActivity extends AppCompatActivity {
                     if(users.getRole().equals("Doctor"))
                     {
                         nametodisplay.setText("Dr." + users.getFname());
-                        contactdoctor.setText("Contact Patient");
-                        imageviewdoctor.setImageResource(R.drawable.user);
 
                     }
                     else {
                         nametodisplay.setText(users.getFname());
-                        contactdoctor.setText("Contact Doctor");
-                        imageviewdoctor.setImageResource(R.drawable.doctor);
 
                     }
                 }
@@ -84,14 +63,22 @@ public class MainActivity extends AppCompatActivity {
             });
 
         }
-        CardView cardView;
-        cardView = findViewById(R.id.healthttrack);
-        cardView.setOnClickListener(new View.OnClickListener() {
+        CardView bmipage,heartratepage;
+        bmipage = findViewById(R.id.bmipagebtn);
+        bmipage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent healthactivity = new Intent(MainActivity.this,actvitiespage.class);
-                startActivity(healthactivity);
+                Intent redirect = new Intent(actvitiespage.this,bmi.class);
+                startActivity(redirect);
             }
         });
-        }
+        heartratepage = findViewById(R.id.heartratepagebtn);
+        heartratepage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent heartredirect = new Intent(actvitiespage.this,heartratepage.class);
+                startActivity(heartredirect);
+            }
+        });
     }
+}
