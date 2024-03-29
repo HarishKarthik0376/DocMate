@@ -23,7 +23,6 @@
 
 <p>-->The FAQ section serves as a resource hub, offering answers to commonly asked questions and empowering users with valuable health-related information.
 </p>
-<p>--> The FAQ section serves as a resource hub, offering answers to commonly asked questions and empowering users with valuable health-related information.</p>
 <h4>9. Reminder system:</h4>
 <p>-->The app incorporates a reminder system to promote healthy habits, including reminders to drink water and prompts for exercise. These reminders are customizable and help users stay hydrated and maintain a regular exercise routine, contributing to their overall well-being.</p>
 <h3>Tech Stack 💻</h3>
