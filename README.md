@@ -25,9 +25,11 @@
 <p>Front-end: JAVA </p>
 <p>Back-end: Firebase</p>
 <h3>Team Members:</h3>
-<p>C.Harish Karthik</p>
-<p>Sowmya R</p>
-<p>Ponsaranya R</p>
+<ul>
+  <li>C.Harish Karthik</li>
+<li>Sowmya R</li>
+<li>Ponsaranya R</li>
+</ul>
 
 
 
