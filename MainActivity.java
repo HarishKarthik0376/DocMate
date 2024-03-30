@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
             }
         },1500);
         TextView nametodisplay,contactdoctor;
-        ImageView imageviewdoctor;
+        ImageView imageviewdoctor,profileicon;
         nametodisplay = findViewById(R.id.nametodisplay);
         contactdoctor = findViewById(R.id.contactdoctor);
         imageviewdoctor = findViewById(R.id.imageviewdoctor);
@@ -84,13 +84,29 @@ public class MainActivity extends AppCompatActivity {
             });
 
         }
-        CardView cardView;
+        profileicon = findViewById(R.id.profileicon);
+        profileicon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent red = new Intent(MainActivity.this,profilepage.class);
+                startActivity(red);
+            }
+        });
+        CardView cardView,contactdoctorcard;
         cardView = findViewById(R.id.healthttrack);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent healthactivity = new Intent(MainActivity.this,actvitiespage.class);
                 startActivity(healthactivity);
+            }
+        });
+        contactdoctorcard = findViewById(R.id.doctorcardview);
+        contactdoctorcard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent redirecttodoc = new Intent(MainActivity.this, contactdoctor.class);
+                startActivity(redirecttodoc);
             }
         });
         }
