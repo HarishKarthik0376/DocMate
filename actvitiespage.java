@@ -1,8 +1,10 @@
 package com.example.doctormate;
 
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -78,6 +80,15 @@ public class actvitiespage extends AppCompatActivity {
             public void onClick(View v) {
                 Intent heartredirect = new Intent(actvitiespage.this,heartratepage.class);
                 startActivity(heartredirect);
+            }
+        });
+        ImageView profile;
+        profile = findViewById(R.id.profileicon);
+        profile.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent prof = new Intent(actvitiespage.this,profilepage.class);
+                startActivity(prof);
             }
         });
     }

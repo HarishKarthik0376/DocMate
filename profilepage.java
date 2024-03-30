@@ -66,6 +66,7 @@ public class profilepage extends AppCompatActivity {
                 Intent loged = new Intent(profilepage.this,login.class);
                 startActivity(loged);
                 finish();
+                finishAffinity();
             }
         });
     }

@@ -92,7 +92,31 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(red);
             }
         });
-        CardView cardView,contactdoctorcard;
+        CardView cardView,contactdoctorcard,remindersection,stepscard,chatbot;
+        chatbot = findViewById(R.id.chatbot);
+        chatbot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent faqsect = new Intent(MainActivity.this,faq.class);
+                startActivity(faqsect);
+            }
+        });
+        stepscard = findViewById(R.id.stepscard);
+        stepscard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent steps = new Intent(MainActivity.this,stepcounter.class);
+                startActivity(steps);
+            }
+        });
+        remindersection = findViewById(R.id.remindersection);
+        remindersection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent remidnerac = new Intent(MainActivity.this,todoreminder.class);
+                startActivity(remidnerac);
+            }
+        });
         cardView = findViewById(R.id.healthttrack);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,5 +1,6 @@
 package com.example.doctormate;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
@@ -44,6 +45,16 @@ public class chatscreen extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         mAuth = FirebaseAuth.getInstance();
         final String senderid = mAuth.getUid();
+        ImageView goback;
+        goback = findViewById(R.id.gobackhome);
+        goback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gohome = new Intent(chatscreen.this,contactdoctor.class);
+                startActivity(gohome);
+                finish();
+            }
+        });
         String recvid = getIntent().getStringExtra("UserId");
         String username = getIntent().getStringExtra("UserName");
         TextView chatusername;
