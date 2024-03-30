@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="270dp"
+        android:layout_height="230dp"
+        android:backgroundTint="@color/black"
+        app:strokeColor="@color/signupred"
+        app:strokeWidth="2dp"
+        app:cardElevation="12dp"
+        android:layout_gravity="center"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter The Ref Code"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:layout_gravity="center"
+            android:background="@drawable/cornerradius"
+            android:hint="Enter Code"
+            android:textColorHint="@color/black"
+            android:textAlignment="center"
+            android:id="@+id/entercode"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|center"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/white"
+            app:strokeColor="@color/signupred"
+            app:strokeWidth="2dp"
+            app:cornerRadius="7dp"
+            android:text="ADD"
+            android:textColor="@color/signupred"
+            android:textStyle="bold"
+            android:id="@+id/addperson"
+            />
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

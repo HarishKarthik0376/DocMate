@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/layouttobeapplied"
+        android:layout_width="370dp"
+        android:layout_height="320dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/black"
+        app:cardCornerRadius="10dp"
+        app:strokeColor="@color/white"
+        app:strokeWidth="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:id="@+id/addatasktext"
+            android:text="Add A New Reminder"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/drinkwater"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="@color/lightblack"
+                        android:text="Drink Water"
+                        android:textColor="@color/white"
+                        app:rippleColor="@color/lightblue"
+                        app:cornerRadius="10dp"
+                        android:textSize="12sp"
+                        app:strokeColor="@color/lightblue"
+                        app:strokeWidth="2dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="@color/lightblack"
+                        android:text="Exercise"
+                        android:textColor="@color/white"
+                        app:cornerRadius="10dp"
+                        app:rippleColor="@color/red"
+                        app:strokeColor="@color/red"
+                        app:strokeWidth="2dp"
+                        android:id="@+id/exercise"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/wakeup"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="@color/lightblack"
+                        android:text="Sleep"
+                        android:textColor="@color/white"
+                        app:rippleColor="@color/orange"
+                        app:cornerRadius="10dp"
+                        app:strokeColor="@color/orange"
+                        app:strokeWidth="2dp" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <EditText
+                android:id="@+id/taskdescription"
+                android:layout_width="270dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/spinner_round_edges"
+                android:hint="Enter Description"
+                android:maxWidth="270dp"
+                android:maxHeight="70dp"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/selecttime"
+                android:layout_width="190dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/spinner_round_edges"
+                android:gravity="center"
+                android:hint="Select Time"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textColorHint="@color/black"
+                android:textSize="16sp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/submittask"
+                android:layout_width="170dp"
+                android:layout_height="63dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/lightblack"
+                android:text="Add Reminder"
+                android:textColor="@color/white"
+                app:rippleColor="@color/signupred"
+                app:cornerRadius="10dp"
+                app:strokeColor="@color/signupred"
+                app:strokeWidth="2dp" />
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+        
+
+</RelativeLayout>
