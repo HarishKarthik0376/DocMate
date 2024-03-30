@@ -3,7 +3,8 @@
 <h3>Problem Statement 🛠️</h3>
 <p>In the digital age, traditional healthcare struggles to meet patient needs, especially in remote areas. Our app tackles this by providing seamless online consultations, overcoming geographical barriers and long waiting times. By connecting patients with medical professionals, regardless of location, we aim to revolutionize healthcare access. Through convenient digital platforms, we facilitate efficient communication for improved patient outcomes. Additionally, our app offers basic health exercises and calculates fitness levels, ensuring holistic care and empowering users to maintain optimal health.</p>
 <h3>PPT Submission:</h3>
-[DocMate.pptx](https://github.com/HarishKarthik0376/DocMate/files/14809953/DocMate.pptx)
+[DocMate.pptx](https://github.com/HarishKarthik0376/DocMate/files/14810877/DocMate.pptx)
+
 <h3>Solution 💪🏽</h3>
 
 <h4>1. Doctor consultation:</h4>
